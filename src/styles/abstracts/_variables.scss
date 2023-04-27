@@ -1,0 +1,23 @@
+$color-primary: #e8604c;
+$color-secondary: #313041;
+$color-nav: #6c757d;
+$color-active-nav: #3b3b4b;
+$color-rating: #ffa801;
+$color-card-details-badge: #faf5ee;
+
+$color-twitter: #2aa9e0;
+$color-facebook: #4292ff;
+$color-pinterest: #df0022;
+.color-insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

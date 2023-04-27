@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+@import '../base/typography';
+
+// Styles Reset //
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+
+body {
+  font-family: $main-font;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;  // >>>>>>>>>>    1rem = 10px
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
