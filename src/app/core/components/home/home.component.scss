@@ -1,0 +1,45 @@
+@import "../../../../styles/main";
+
+.home {
+  .bg-layer {
+    .hero {
+      min-height: 70vh;
+      width: 100%;
+      overflow: hidden;
+      .landing {
+        min-height: 70vh;
+        background-image: linear-gradient(
+            to right,
+            rgb(49, 48, 65, 0.6),
+            rgb(49, 48, 65, 0.6)
+          ),
+          url(../../../../assets/homeslider/main-slider-1-3-fe6aff2e.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: backgroundScale 8s ease;
+        transition: scale(1.2);
+        .landing-primary-heading {
+          color: $color-primary;
+          font-family: $accent-font;
+          font-size: 5rem;
+          padding: 0.5rem;
+          animation: moveDown 1.5s ease;
+        }
+        .landing-primary-description {
+          color: white;
+          font-family: $main-font;
+          font-size: 2.5rem;
+          font-weight: 500;
+          padding: 1.5rem;
+          animation: moveUp 1.8s ease-out;
+        }
+      }
+    }
+  }
+}
