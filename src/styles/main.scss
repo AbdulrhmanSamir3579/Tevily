@@ -10,7 +10,8 @@
 
 @import './themes/dark';
 
-
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 // Global Project Styling //
 .navbar{
     .nav-link{

@@ -1,0 +1,194 @@
+@import "../../../../styles/main";
+section {
+  .bg {
+    height: 250px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("./../../../../assets/news/page-header-bg.77671684.jpg"), no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container {
+      margin: auto;
+      h2 {
+        color: $color-card-details-badge;
+      }
+    }
+  }
+  .container {
+    margin: 50px auto;
+    .col-md-8 {
+      .parent {
+        position: relative;
+        overflow: hidden;
+        .box {
+          background-color: $color-primary;
+          padding: 5px 5px 15px;
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          text-align: center;
+          border-top-left-radius: 7px;
+          p {
+            color: $color-card-details-badge;
+            font-size: 20px;
+            line-height: 5px;
+          }
+        }
+      }
+      h2 {
+        margin-top: 10px;
+        color: $color-primary;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 30px;
+        color: grey;
+      }
+      hr {
+        color: $color-primary;
+        margin-top: 20px;
+      }
+
+      .comment {
+        margin: 20px 5px;
+        display: flex;
+        justify-content: space-between;
+
+        .social {
+          display: flex;
+
+          .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #faf5ee;
+            &:hover {
+              cursor: pointer;
+              background-color: $color-primary;
+              i {
+                transform: scale(1.3);
+              }
+            }
+          }
+        }
+      }
+      .newParent {
+        background-color: #faf5ee;
+
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .inputBox {
+        input {
+          height: 50px;
+          background-color: #faf5ee;
+          border: 0;
+          padding: 5px 10px;
+          margin-bottom: 10px;
+        }
+        textarea {
+          height: 150px;
+          background-color: #faf5ee;
+          border: 0;
+          padding: 5px 10px;
+        }
+      }
+      button {
+        padding: 20px 70px;
+        background-color: $color-primary;
+        border: 0;
+        border-radius: 10px;
+        margin-top: 10px;
+        color: #faf5ee;
+        font: {
+          size: medium;
+          weight: 800;
+        }
+      }
+    }
+    .col-md-4 {
+      margin-top: 50px;
+      .next {
+        border: 1px solid #f1ece5;
+        border-radius: 10px;
+        padding: 50px 50px;
+        margin-bottom: 50px;
+        h4 {
+          color: $color-primary;
+        }
+        input {
+          margin-top: 30px;
+          height: 50px;
+          border: 0;
+          border-radius: 10px;
+          padding: 5px;
+          background-color: #faf5ee;
+        }
+      }
+      .next1 {
+        @extend .next;
+        h4 {
+          color: $color-primary;
+          margin-bottom: 5px;
+        }
+        ul {
+          padding-top: 10px;
+          li {
+            display: flex;
+            justify-content: space-around;
+            .next1-img {
+              overflow: hidden;
+              width: 100px;
+              height: 100px;
+              img {
+                border-radius: 10px;
+              }
+            }
+            .content {
+              margin-left: 10px;
+            }
+          }
+          hr {
+            color: $color-primary;
+            margin: 10px 5px 30px;
+          }
+        }
+      }
+      .next2 {
+        @extend .next;
+
+        h4 {
+          color: $color-primary;
+        }
+        ul {
+          li {
+            font-size: large;
+            line-height: 50px;
+            color: $color-nav;
+          }
+        }
+      }
+      .next3 {
+        @extend .next;
+
+        .hef {
+          margin-top: 20px;
+          span {
+            background-color: #fbf3e9;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin: 5px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
