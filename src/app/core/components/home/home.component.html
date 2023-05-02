@@ -3,14 +3,23 @@
 
 
 <section class="home">
-  <div class="bg-layer">
-    <div class="hero">
-      <div class="landing">
+  <div class="hero">
+    <div class="bg-layer position-relative">
+    
+      <owl-carousel-o [options]="customOptions">
+        
+        <ng-template carouselSlide><img src="./../../../../assets/homeslider/main-slider-1-3-fe6aff2e.jpg" class="w-100" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./../../../../assets/homeslider/main-slider-1-1-62fecf08.jpg" class="w-100" alt=""></ng-template>  
+        <ng-template carouselSlide><img src="./../../../../assets/homeslider/main-slider-1-2-4865c85b.jpg"class="w-100" alt=""></ng-template>  
+      </owl-carousel-o>
+      <div class="landing  position-absolute "> 
         <h2 class="landing-primary-heading">Travel & Adventures</h2>
         <span class="landing-primary-description"
           >Where Would You Like To Go?</span
         >
       </div>
     </div>
+  
   </div>
+
 </section>
