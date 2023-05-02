@@ -17,7 +17,7 @@ import { SearchPipe } from './core/pipes/search.pipe';
 import { LoginComponent } from './core/components/login/login.component';
 import { RegisterComponent } from './core/components/register/register.component';
 import { NotfoundComponent } from './core/components/notfound/notfound.component';
-import { RouterModule , Routes } from "@angular/router";
+import { RouterModule  } from "@angular/router";
 import { CarouselModule } from 'ngx-owl-carousel-o'
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NewsDetailsComponent } from './core/components/news-details/news-details.component';
