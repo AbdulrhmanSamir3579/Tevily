@@ -8,13 +8,14 @@ import { AboutComponent } from './core/components/about/about.component';
 import { NewsComponent } from './core/components/news/news.component';
 import { ContactComponent } from './core/components/contact/contact.component';
 import { NewsDetailsComponent } from './core/components/news-details/news-details.component';
+import { ToursComponent } from './core/components/tours/tours.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'destination', component: DestinationComponent },
   { path: 'destination/:dist', component: DestinationDetailsComponent },
-  { path: 'tours', component: ToursDetailsComponent },
+  { path: 'tours', component: ToursComponent },
   { path: 'tours/:id', component: ToursDetailsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'news', component: NewsComponent },
