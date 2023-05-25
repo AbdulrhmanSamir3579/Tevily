@@ -8,30 +8,18 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class HomeComponent {
     customOptions: OwlOptions = {
       loop: true,
-      mouseDrag: false,
+      mouseDrag: true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
       touchDrag: false,
       pullDrag: false,
       dots: false,
-      navSpeed: 700,
+      navSpeed: 100,
       autoplay:true,
-      autoplayTimeout:7500,
-      autoplaySpeed:2000,
+      autoplayTimeout:5000,
+      autoplaySpeed:1000,
       navText: ['', ''],
-      responsive: {
-        0: {
-          items: 1
-        },
-        400: {
-          items: 1
-        },
-        740: {
-          items: 1
-        },
-        940: {
-          items: 1
-        }
-      },
-      nav:false
+      items: 1,
     }
   
 }
